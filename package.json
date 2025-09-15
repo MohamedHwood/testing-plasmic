@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.2",
+    "@plasmicapp/loader-nextjs": "^1.0.437",
+    "next": "14.2.32",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.32"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
