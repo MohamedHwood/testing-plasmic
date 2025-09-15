@@ -22,19 +22,19 @@
           "type": "styleTokensProvider"
         },
         {
-          "assetId": "oWwvoKuXjHMyiEVNYgMWEB",
-          "type": "projectCss",
-          "checksum": "c1556c4d662cbc73db58adcfe2c7a160"
-        },
-        {
           "type": "renderModule",
           "assetId": "gsQkRCU9a6pr",
-          "checksum": "0f993f977399ac064f054245c6fdc77c"
+          "checksum": "dbf1173a937029887a7ca13b48058cd4"
         },
         {
           "type": "cssRules",
           "assetId": "gsQkRCU9a6pr",
-          "checksum": "0f993f977399ac064f054245c6fdc77c"
+          "checksum": "dbf1173a937029887a7ca13b48058cd4"
+        },
+        {
+          "assetId": "oWwvoKuXjHMyiEVNYgMWEB",
+          "type": "projectCss",
+          "checksum": "c1556c4d662cbc73db58adcfe2c7a160"
         }
       ],
       "codegenVersion": "0.0.2"
