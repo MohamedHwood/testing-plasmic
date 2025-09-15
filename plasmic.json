@@ -35,12 +35,12 @@
           "projectId": "oWwvoKuXjHMyiEVNYgMWEB",
           "renderModuleFilePath": "plasmic/website_starter/PlasmicHomepage.jsx",
           "importSpec": {
-            "modulePath": "../pages/home.jsx"
+            "modulePath": "../pages/test/home.jsx"
           },
           "cssFilePath": "plasmic/website_starter/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page",
-          "path": "/home"
+          "path": "/test/home"
         }
       ],
       "icons": [],
