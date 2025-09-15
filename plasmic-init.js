@@ -1,6 +1,5 @@
 import { Button, TextField } from "@mui/material";
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
-import * as MUI from "@mui/material";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [

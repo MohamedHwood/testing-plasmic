@@ -1,5 +1,5 @@
 {
-  "name": "my-plasmic-app",
+  "name": "plasmic-test-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,9 +12,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.2",
-    "@plasmicapp/cli": "^0.1.342",
     "@plasmicapp/loader-nextjs": "^1.0.437",
-    "@plasmicapp/react-web": "^0.2.400",
     "next": "14.2.32",
     "react": "^18",
     "react-dom": "^18"
