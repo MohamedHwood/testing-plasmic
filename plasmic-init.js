@@ -30,6 +30,7 @@ export const PLASMIC = initPlasmicLoader({
 // Register MUI Button
 PLASMIC.registerComponent(Button, {
   name: "MuiButton",
+  importPath: "@mui/material",
   props: {
     children: "slot",
     variant: {
@@ -47,6 +48,7 @@ PLASMIC.registerComponent(Button, {
 // Register MUI TextField
 PLASMIC.registerComponent(TextField, {
   name: "MuiTextField",
+  importPath: "@mui/material",
   props: {
     label: "string",
     variant: {
