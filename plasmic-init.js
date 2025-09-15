@@ -57,17 +57,3 @@ PLASMIC.registerComponent(TextField, {
     onChange: "function",
   },
 });
-
-// Register MUI TextField
-PLASMIC.registerComponent(TextField, {
-  name: "MuiTextField2",
-  props: {
-    label: "string",
-    variant: {
-      type: "choice",
-      options: ["outlined", "filled", "standard"],
-    },
-    fullWidth: "boolean",
-    onChange: "function",
-  },
-});
