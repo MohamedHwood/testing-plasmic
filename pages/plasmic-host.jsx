@@ -3,7 +3,7 @@ import {
   PlasmicCanvasHost,
   registerComponent,
 } from "@plasmicapp/react-web/lib/host";
-import * as MUI from "@mui/material";
+import { Button, TextField } from "@mui/material";
 
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
@@ -18,81 +18,69 @@ export default function PlasmicHost() {
   return <PlasmicCanvasHost />;
 }
 
-// Define the components to register
-const components = [
-  {
-    component: MUI.Button,
-    name: "MUIButton",
-    props: {
-      children: { type: "slot", defaultValue: "Click Me" },
-      variant: {
-        type: "choice",
-        options: ["text", "outlined", "contained"],
-        defaultValue: "contained",
-      },
-      color: {
-        type: "choice",
-        options: [
-          "inherit",
-          "primary",
-          "secondary",
-          "success",
-          "error",
-          "info",
-          "warning",
-        ],
-        defaultValue: "primary",
-      },
-      size: {
-        type: "choice",
-        options: ["small", "medium", "large"],
-        defaultValue: "medium",
-      },
-      disabled: { type: "boolean", defaultValue: false },
-      fullWidth: { type: "boolean", defaultValue: false },
-      href: { type: "string", defaultValue: "" },
-      startIcon: { type: "slot" },
-      endIcon: { type: "slot" },
-      onClick: { type: "eventHandler", argTypes: [] },
+registerComponent(Button, {
+  name: "MUIButton",
+  importPath: "@mui/material",
+  props: {
+    children: { type: "slot", defaultValue: "Click Me" },
+    variant: {
+      type: "choice",
+      options: ["text", "outlined", "contained"],
+      defaultValue: "contained",
     },
-  },
-  {
-    component: MUI.TextField,
-    name: "MUITextField",
-    props: {
-      label: { type: "string", defaultValue: "Label" },
-      variant: {
-        type: "choice",
-        options: ["standard", "filled", "outlined"],
-        defaultValue: "outlined",
-      },
-      color: {
-        type: "choice",
-        options: ["primary", "secondary"],
-        defaultValue: "primary",
-      },
-      size: {
-        type: "choice",
-        options: ["small", "medium"],
-        defaultValue: "medium",
-      },
-      placeholder: { type: "string", defaultValue: "" },
-      disabled: { type: "boolean", defaultValue: false },
-      fullWidth: { type: "boolean", defaultValue: false },
-      onChange: {
-        type: "eventHandler",
-        argTypes: [{ name: "value", type: "string" }],
-      },
+    color: {
+      type: "choice",
+      options: [
+        "inherit",
+        "primary",
+        "secondary",
+        "success",
+        "error",
+        "info",
+        "warning",
+      ],
+      defaultValue: "primary",
     },
+    size: {
+      type: "choice",
+      options: ["small", "medium", "large"],
+      defaultValue: "medium",
+    },
+    disabled: { type: "boolean", defaultValue: false },
+    fullWidth: { type: "boolean", defaultValue: false },
+    href: { type: "string", defaultValue: "" },
+    startIcon: { type: "slot" },
+    endIcon: { type: "slot" },
+    onClick: { type: "eventHandler", argTypes: [] },
   },
-  // Add more MUI components here...
-];
+});
 
-// Register all components automatically
-components.forEach(({ component, name, props }) => {
-  registerComponent(component, {
-    name,
-    importPath: "@mui/material",
-    props,
-  });
+registerComponent(TextField, {
+  name: "MUITextField",
+  importPath: "@mui/material",
+  props: {
+    label: { type: "string", defaultValue: "Label" },
+    variant: {
+      type: "choice",
+      options: ["standard", "filled", "outlined"],
+      defaultValue: "outlined",
+    },
+    color: {
+      type: "choice",
+      options: ["primary", "secondary"],
+      defaultValue: "primary",
+    },
+    size: {
+      type: "choice",
+      options: ["small", "medium"],
+      defaultValue: "medium",
+    },
+    placeholder: { type: "string", defaultValue: "" },
+    disabled: { type: "boolean", defaultValue: false },
+    fullWidth: { type: "boolean", defaultValue: false },
+    onChange: {
+      type: "eventHandler",
+      argTypes: [{ name: "value", type: "string" }],
+    },
+  },
 });
