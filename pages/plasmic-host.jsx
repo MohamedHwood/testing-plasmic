@@ -70,6 +70,7 @@ registerComponent(Button, {
     },
     onClick: {
       type: "eventHandler",
+      argTypes: [], // ✅ required for Studio
     },
   },
 });
