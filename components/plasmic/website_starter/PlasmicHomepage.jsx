@@ -17,7 +17,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import { MUIButton } from "@mui/material"; // plasmic-import: rc4S2kmVisMd/codeComponent
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/projectcss
@@ -130,19 +129,6 @@ function PlasmicHomepage__RenderFunc(props) {
               </React.Fragment>
             </div>
           </section>
-          <MUIButton
-            data-plasmic-name={"muiButton"}
-            data-plasmic-override={overrides.muiButton}
-            className={classNames("__wab_instance", sty.muiButton)}
-            color={"primary"}
-            disabled={false}
-            fullWidth={false}
-            href={""}
-            size={"medium"}
-            variant={"contained"}
-          >
-            {"Click Me"}
-          </MUIButton>
         </div>
       </div>
     </React.Fragment>
@@ -150,11 +136,10 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  home: ["home", "section", "h1", "text", "muiButton"],
+  home: ["home", "section", "h1", "text"],
   section: ["section", "h1", "text"],
   h1: ["h1"],
-  text: ["text"],
-  muiButton: ["muiButton"]
+  text: ["text"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -192,7 +177,6 @@ export const PlasmicHomepage = Object.assign(
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
-    muiButton: makeNodeComponent("muiButton"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
