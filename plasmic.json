@@ -64,15 +64,15 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "TRz8GdiUl51s",
-          "name": "MuiButton",
-          "displayName": "MuiButton",
+          "id": "rc4S2kmVisMd",
+          "name": "MUIButton",
+          "displayName": "MUIButton",
           "componentImportPath": "@mui/material"
         },
         {
-          "id": "0Vsgfn3mbwYX",
-          "name": "MuiTextField",
-          "displayName": "MuiTextField",
+          "id": "CJquXWZRz-9m",
+          "name": "MUITextField",
+          "displayName": "MUITextField",
           "componentImportPath": "@mui/material"
         }
       ],

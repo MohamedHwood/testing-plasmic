@@ -61,17 +61,14 @@
   justify-self: flex-end;
   min-width: 0;
 }
-.text__mFy6P {
+.text {
   position: relative;
   width: 100%;
   height: auto;
   min-width: 0;
 }
-.text__eFiOc {
-  position: relative;
-  width: 100%;
-  height: auto;
+.muiButton:global(.__wab_instance) {
   max-width: 100%;
-  flex-shrink: 1;
-  min-width: 0;
+  object-fit: cover;
+  width: 707px;
 }
