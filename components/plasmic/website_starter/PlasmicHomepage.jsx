@@ -17,7 +17,6 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
-import { MuiTextField } from "@mui/material"; // plasmic-import: 0Vsgfn3mbwYX/codeComponent
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/projectcss
@@ -129,53 +128,6 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </React.Fragment>
             </div>
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField__ciSqD)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
-
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField__xLxq5)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
-
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField___6Knkb)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
-
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField___5AfOz)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
-
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField__iRxAy)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
-
-            <MuiTextField
-              className={classNames("__wab_instance", sty.muiTextField__p5D8)}
-              fullWidth={true}
-              label={"Text Field"}
-              onChange={``}
-              variant={"filled"}
-            />
           </section>
         </div>
       </div>
