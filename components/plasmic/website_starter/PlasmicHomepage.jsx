@@ -129,32 +129,20 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </React.Fragment>
             </div>
-            <MUIButton
-              data-plasmic-name={"muiButton"}
-              data-plasmic-override={overrides.muiButton}
-              className={classNames("__wab_instance", sty.muiButton)}
-              color={"primary"}
-              disabled={false}
-              endIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg__w6F6)}
-                  role={"img"}
-                />
-              }
-              fullWidth={false}
-              href={""}
-              size={"medium"}
-              startIcon={
-                <svg
-                  className={classNames(projectcss.all, sty.svg___0WuzZ)}
-                  role={"img"}
-                />
-              }
-              variant={"contained"}
-            >
-              {"Click Me"}
-            </MUIButton>
           </section>
+          <MUIButton
+            data-plasmic-name={"muiButton"}
+            data-plasmic-override={overrides.muiButton}
+            className={classNames("__wab_instance", sty.muiButton)}
+            color={"primary"}
+            disabled={false}
+            fullWidth={false}
+            href={""}
+            size={"medium"}
+            variant={"contained"}
+          >
+            {"Click Me"}
+          </MUIButton>
         </div>
       </div>
     </React.Fragment>
@@ -163,7 +151,7 @@ function PlasmicHomepage__RenderFunc(props) {
 
 const PlasmicDescendants = {
   home: ["home", "section", "h1", "text", "muiButton"],
-  section: ["section", "h1", "text", "muiButton"],
+  section: ["section", "h1", "text"],
   h1: ["h1"],
   text: ["text"],
   muiButton: ["muiButton"]
