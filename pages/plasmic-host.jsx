@@ -1,5 +1,9 @@
-import * as React from 'react';
-import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/host';
+import * as React from "react";
+import {
+  PlasmicCanvasHost,
+  registerComponent,
+} from "@plasmicapp/react-web/lib/host";
+import { Button } from "@mui/material";
 
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
@@ -13,3 +17,59 @@ import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/react-web/lib/
 export default function PlasmicHost() {
   return <PlasmicCanvasHost />;
 }
+
+// Register MUI Button for Plasmic
+registerComponent(Button, {
+  name: "MUI Button",
+  importPath: "@mui/material", // so Plasmic knows where to import it from
+  props: {
+    children: {
+      type: "slot", // allows you to put text or other components inside the button
+      defaultValue: "Click Me",
+    },
+    variant: {
+      type: "choice",
+      options: ["text", "outlined", "contained"],
+      defaultValue: "contained",
+    },
+    color: {
+      type: "choice",
+      options: [
+        "inherit",
+        "primary",
+        "secondary",
+        "success",
+        "error",
+        "info",
+        "warning",
+      ],
+      defaultValue: "primary",
+    },
+    size: {
+      type: "choice",
+      options: ["small", "medium", "large"],
+      defaultValue: "medium",
+    },
+    disabled: {
+      type: "boolean",
+      defaultValue: false,
+    },
+    fullWidth: {
+      type: "boolean",
+      defaultValue: false,
+    },
+    href: {
+      type: "string",
+      defaultValue: "",
+    },
+    startIcon: {
+      type: "slot",
+    },
+    endIcon: {
+      type: "slot",
+    },
+    onClick: {
+      type: "eventHandler",
+    },
+  },
+});
