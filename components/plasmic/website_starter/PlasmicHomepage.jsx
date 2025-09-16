@@ -17,6 +17,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import { MUIButton } from "@mui/material"; // plasmic-import: rc4S2kmVisMd/codeComponent
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: oWwvoKuXjHMyiEVNYgMWEB/projectcss
@@ -101,10 +102,12 @@ function PlasmicHomepage__RenderFunc(props) {
               {"Test Deployment"}
             </h1>
             <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text__mFy6P
+                sty.text
               )}
             >
               <React.Fragment>
@@ -126,16 +129,32 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </React.Fragment>
             </div>
+            <MUIButton
+              data-plasmic-name={"muiButton"}
+              data-plasmic-override={overrides.muiButton}
+              className={classNames("__wab_instance", sty.muiButton)}
+              color={"primary"}
+              disabled={false}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__w6F6)}
+                  role={"img"}
+                />
+              }
+              fullWidth={false}
+              href={""}
+              size={"medium"}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___0WuzZ)}
+                  role={"img"}
+                />
+              }
+              variant={"contained"}
+            >
+              {"Click Me"}
+            </MUIButton>
           </section>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__eFiOc
-            )}
-          >
-            {"Enter some text"}
-          </div>
         </div>
       </div>
     </React.Fragment>
@@ -143,9 +162,11 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  home: ["home", "section", "h1"],
-  section: ["section", "h1"],
-  h1: ["h1"]
+  home: ["home", "section", "h1", "text", "muiButton"],
+  section: ["section", "h1", "text", "muiButton"],
+  h1: ["h1"],
+  text: ["text"],
+  muiButton: ["muiButton"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -182,6 +203,8 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
+    muiButton: makeNodeComponent("muiButton"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
