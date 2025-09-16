@@ -5,7 +5,7 @@
   height: 100%;
   align-content: flex-start;
   justify-items: center;
-  background: #ff0000;
+  background: #ffffff;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -61,9 +61,17 @@
   justify-self: flex-end;
   min-width: 0;
 }
-.text {
+.text__mFy6P {
   position: relative;
   width: 100%;
   height: auto;
+  min-width: 0;
+}
+.text__eFiOc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-shrink: 1;
   min-width: 0;
 }

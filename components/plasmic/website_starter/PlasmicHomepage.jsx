@@ -101,12 +101,10 @@ function PlasmicHomepage__RenderFunc(props) {
               {"Test Deployment"}
             </h1>
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text__mFy6P
               )}
             >
               <React.Fragment>
@@ -129,6 +127,15 @@ function PlasmicHomepage__RenderFunc(props) {
               </React.Fragment>
             </div>
           </section>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__eFiOc
+            )}
+          >
+            {"Enter some text"}
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -136,10 +143,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  home: ["home", "section", "h1", "text"],
-  section: ["section", "h1", "text"],
-  h1: ["h1"],
-  text: ["text"]
+  home: ["home", "section", "h1"],
+  section: ["section", "h1"],
+  h1: ["h1"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -176,7 +182,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
