@@ -1,8 +1,8 @@
 .root {
-  display: flex;
+  display: inline-flex;
   position: relative;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   background: #ab4141;
   flex-direction: row;
   justify-content: flex-start;
@@ -12,16 +12,14 @@
   flex-grow: 0;
   column-gap: 16px;
   row-gap: 16px;
-  min-width: 0;
+  justify-self: flex-start;
+  max-width: 120rem;
+  min-height: 0;
   padding: 1rem;
 }
-.card___1JWdv:global(.__wab_instance) {
+.card:global(.__wab_instance) {
   max-width: 100%;
-  width: 493px;
-  flex-shrink: 0;
-}
-.card__pcApU:global(.__wab_instance) {
-  max-width: 100%;
-  width: 579px;
+  width: 377px;
+  margin-right: 0px;
   flex-shrink: 0;
 }

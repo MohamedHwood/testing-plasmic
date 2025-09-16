@@ -73,14 +73,18 @@ function PlasmicCardsContainer__RenderFunc(props) {
         sty.root
       )}
     >
-      <Card className={classNames("__wab_instance", sty.card___1JWdv)} />
-      <Card className={classNames("__wab_instance", sty.card__pcApU)} />
+      <Card
+        data-plasmic-name={"card"}
+        data-plasmic-override={overrides.card}
+        className={classNames("__wab_instance", sty.card)}
+      />
     </div>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "card"],
+  card: ["card"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -115,6 +119,7 @@ export const PlasmicCardsContainer = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    card: makeNodeComponent("card"),
     // Metadata about props expected for PlasmicCardsContainer
     internalVariantProps: PlasmicCardsContainer__VariantProps,
     internalArgProps: PlasmicCardsContainer__ArgProps

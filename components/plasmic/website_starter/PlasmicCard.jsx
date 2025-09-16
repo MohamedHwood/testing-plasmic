@@ -48,7 +48,8 @@ function PlasmicCard__RenderFunc(props) {
     () =>
       Object.assign(
         {
-          linkTitle: "Add Title Here"
+          linkTitle: "Add Title Here",
+          linkUrl: "/"
         },
         Object.fromEntries(
           Object.entries(props.args).filter(([_, v]) => v !== undefined)

@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   align-content: flex-start;
-  justify-items: center;
+  justify-items: stretch;
   background: #ffffff;
   min-width: 0;
   min-height: 0;
@@ -27,7 +27,10 @@
 }
 .cardsContainer__r4K8L:global(.__wab_instance) {
   max-width: 100%;
-  height: 663px;
-  width: 1051px;
+  height: 100%;
+  width: 100%;
   margin-right: 0px;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  min-height: 0;
 }
