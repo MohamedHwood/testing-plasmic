@@ -135,9 +135,21 @@ function PlasmicHomepage__RenderFunc(props) {
               className={classNames("__wab_instance", sty.muiButton)}
               color={"primary"}
               disabled={false}
+              endIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg__w6F6)}
+                  role={"img"}
+                />
+              }
               fullWidth={false}
               href={""}
               size={"medium"}
+              startIcon={
+                <svg
+                  className={classNames(projectcss.all, sty.svg___0WuzZ)}
+                  role={"img"}
+                />
+              }
               variant={"contained"}
             >
               {"Click Me"}
