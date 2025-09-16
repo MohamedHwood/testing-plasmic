@@ -22,7 +22,7 @@ export default function PlasmicHost() {
 const components = [
   {
     component: MUI.Button,
-    name: "MUI Button",
+    name: "MUIButton",
     props: {
       children: { type: "slot", defaultValue: "Click Me" },
       variant: {
@@ -58,7 +58,7 @@ const components = [
   },
   {
     component: MUI.TextField,
-    name: "MUI TextField",
+    name: "MUITextField",
     props: {
       label: { type: "string", defaultValue: "Label" },
       variant: {
