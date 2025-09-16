@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #ab4141;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-grow: 0;
+  column-gap: 16px;
+  row-gap: 16px;
+  min-width: 0;
+  padding: 1rem;
+}
+.card___1JWdv:global(.__wab_instance) {
+  max-width: 100%;
+  width: 493px;
+  flex-shrink: 0;
+}
+.card__pcApU:global(.__wab_instance) {
+  max-width: 100%;
+  width: 579px;
+  flex-shrink: 0;
+}

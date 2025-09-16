@@ -41,10 +41,42 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/"
+        },
+        {
+          "id": "C9iei434bJIZ",
+          "name": "CardsContainer",
+          "type": "managed",
+          "projectId": "oWwvoKuXjHMyiEVNYgMWEB",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicCardsContainer.jsx",
+          "importSpec": {
+            "modulePath": "CardsContainer.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicCardsContainer.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "c1iYvYtk__B-",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "oWwvoKuXjHMyiEVNYgMWEB",
+          "renderModuleFilePath": "plasmic/website_starter/PlasmicCard.jsx",
+          "importSpec": {
+            "modulePath": "Card.jsx"
+          },
+          "cssFilePath": "plasmic/website_starter/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [],
-      "images": [],
+      "images": [
+        {
+          "id": "KrVxRVEx9ez2",
+          "name": "Nice_Guy-uai-1200x800.jpg",
+          "filePath": "../public/plasmic/website_starter/images/niceGuyUai1200X800Jpg.jpg"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
@@ -64,16 +96,10 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "rc4S2kmVisMd",
-          "name": "MUIButton",
-          "displayName": "MUIButton",
-          "componentImportPath": "@mui/material"
-        },
-        {
-          "id": "CJquXWZRz-9m",
-          "name": "MUITextField",
-          "displayName": "MUITextField",
-          "componentImportPath": "@mui/material"
+          "id": "VNF3CUrZle-M",
+          "name": "PlasmicCard",
+          "displayName": "PlasmicCard",
+          "componentImportPath": "../components/PlasmicCard"
         }
       ],
       "customFunctions": []

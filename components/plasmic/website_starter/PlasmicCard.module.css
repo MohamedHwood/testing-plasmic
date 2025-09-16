@@ -1,0 +1,57 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 367px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff00;
+  row-gap: 16px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  min-width: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+  padding: 8px;
+}
+.freeBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 560px;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("/plasmic/website_starter/images/niceGuyUai1200X800Jpg.jpg") top 50% left 50% / contain repeat;
+  max-width: 551px;
+  max-height: 300px;
+  margin-left: 0px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.link {
+  align-self: center;
+  color: #000000;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  text-decoration-line: underline;
+  user-select: text;
+  text-transform: uppercase;
+  cursor: pointer;
+  filter: none;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+}
+.root:hover .link {
+  text-decoration-line: none;
+}
