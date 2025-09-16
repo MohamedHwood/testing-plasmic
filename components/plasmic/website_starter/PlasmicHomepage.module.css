@@ -5,6 +5,7 @@
   height: 100%;
   align-content: flex-start;
   justify-items: center;
+  background: #ff0000;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
